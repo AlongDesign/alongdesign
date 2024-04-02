@@ -16,4 +16,5 @@ Here are some ideas to get you started:
 -->
 alongdesign的主页
 [点击](http://alongdesign.github.io)
-zemax[page](zemax)
+
+zemax [page](page/zemax)
