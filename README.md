@@ -14,5 +14,5 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
-zemax基本操作
-[图片](http://alongdesign.github.io)
+alongdesign的主页
+[点击](http://alongdesign.github.io)
