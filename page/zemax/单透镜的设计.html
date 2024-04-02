@@ -1259,7 +1259,7 @@ pre[class*="language-"] {
 </li>
 </ol>
 <h2 class="atx" id="镜头分类参数和设计约束">镜头分类参数和设计约束</h2>
-<p>设计和优化一个玻璃材料为N-BK7， F数为4的单透镜。最终设计方案应满足以下规格和约束条件:</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;设计和优化一个玻璃材料为N-BK7， F数为4的单透镜。最终设计方案应满足以下规格和约束条件:</p>
 <table>
 <thead>
 <tr>
@@ -1297,6 +1297,42 @@ pre[class*="language-"] {
 </tr>
 </tbody></table>
 <h2 class="atx" id="镜头数据编辑器">镜头数据编辑器</h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;在计算机辅助序列透镜设计中，光线按其排列的顺序从一个表面追迹到下一个表面。为此，OpticStudio使用一种名为<strong>镜头数据编辑器</strong> (LDE) 的电子表格。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;打开OpticStudio后，OpticStudio主窗口（工作区）中将出现一个空白的镜头数据编辑器。除了工作区中的镜头数据编辑器，您还将看到一个标题栏，其中指定打开
+的窗口的类型；菜单(Ribbon)栏，其中提供对OpticStudio所有特性的访问；以及窗口顶部的<strong>快速访问工具栏</strong> (Quick Access Toolbar) 。在左边，您将看到系统选项 (System Explorer) ，其中包含有关当前设计的特定系统信息。在序列模式下，镜头数据编辑器是主要的电子表格，其中输入了大部分镜头数据。部分主要输入项包括:</p>
+<table>
+<thead>
+<tr>
+<th>列名称</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>表面类型（surface type）</td>
+<td>表面类型（标准面（standard）、偶次非球面（even aslphere）、衍射光栅（diffraction grating）等）</td>
+</tr>
+<tr>
+<td>标准（comment）</td>
+<td>用于输入特定表面注释的可选区域</td>
+</tr>
+<tr>
+<td>曲率半径（radius）</td>
+<td>镜头单位定义的表面曲率半径（<strong>曲率的倒数</strong>）</td>
+</tr>
+<tr>
+<td>厚度（thickness）</td>
+<td>镜头单位定义的厚度、区分当前和其后表面顶点</td>
+</tr>
+<tr>
+<td>材料（material）</td>
+<td>材料类型（玻璃、空气等），区分当前面与其后的面</td>
+</tr>
+<tr>
+<td>净口径（clear semidiameter）</td>
+<td>镜头单位定义的表面孔径的半尺寸</td>
+</tr>
+</tbody></table>
+<p><img alt="" src="file:///C:/Users/lenovo/Desktop/%E5%85%89%E5%AD%A6%E8%AE%BE%E8%AE%A1/md%E6%96%87%E4%BB%B6/%E5%BA%8F%E5%88%97%E6%A8%A1%E5%BC%8F%E9%95%9C%E5%A4%B4%E6%95%B0%E6%8D%AE%E8%A1%A8.PNG">&nbsp;&nbsp;&nbsp;&nbsp;镜头数据编辑器中的每一行表示一个表面。在OpticStudio序列模式中，每个光学系统从物面 (OBJ) 开始，到像面 (IMA) 结束。除了物面和像面外，剩余表面中的一个表面必须定义为光阑 (STOP) 。</p>
 </article>
 </body>
 </html>
