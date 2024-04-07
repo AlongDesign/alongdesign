@@ -2413,7 +2413,7 @@ body {
 <td align="center">镜头单位定义的表面孔径的半尺寸</td>
 </tr>
 </tbody></table>
-<p><img data-align="center" alt="" title="" src="file:///C:/Users/lenovo/Desktop/光学设计/md文件/LED.PNG">&nbsp;&nbsp;</p>
+<p><img data-align="center" alt="" title="" src="img/LED.PNG">&nbsp;&nbsp;</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;镜头数据编辑器中的每一行表示一个表面。在OpticStudio序列模式中，每个光学系统从物面 (OBJ) 开始，到像面 (IMA) 结束。除了物面和像面外，剩余表面中的一个表面必须定义为<strong>光阑</strong> (STOP) 。</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;通过在高亮单元格中键入所需的值，可以将数据输入到镜头数据编辑器中。光标键或鼠标可以将高亮栏移动到所需的任何一栏。</p>
 <h3 class="atx" id="定义系统设置">定义系统设置</h3>
@@ -2421,19 +2421,19 @@ body {
 <p>&nbsp;&nbsp;&nbsp;&nbsp;入瞳直径可能是最常用的系统孔径类型，也是当前示例中最方便的定义。在OpticStudio中，入瞳直径被定义为从物空间看到的光瞳直径，以镜头单位为单位。</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;我们可以很容易地确定单透镜所需的入瞳直径。如前所述，单透镜的F/#必须等于4，有效焦距为100mm。由于F/#为无限共轭的近轴有效焦距与近轴入瞳直径之比，因此入瞳直径为25mm:</p>
 <span class="katex-display"><span class="katex"><span class="katex-mathml"></span><span aria-hidden="true" class="katex-html"><span class="base"><span style="height:1.9741em;vertical-align:-0.686em;" class="strut"></span><span class="mord"><span class="mord"><span class="mord"><span class="mord mathtt">F/#</span><span style="margin-right:0.2778em;" class="mspace"></span><span class="mrel">=</span><span style="margin-right:0.2778em;" class="mspace"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span style="height:1.2881em;" class="vlist"><span style="top:-2.314em;"><span style="height:3em;" class="pstrut"></span><span class="mord"><span class="mord mathtt">EPD</span></span></span><span style="top:-3.23em;"><span style="height:3em;" class="pstrut"></span><span style="border-bottom-width:0.04em;" class="frac-line"></span></span><span style="top:-3.677em;"><span style="height:3em;" class="pstrut"></span><span class="mord"><span class="mord mathtt">efl</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span style="height:0.686em;" class="vlist"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></span></span></span><p>&nbsp;&nbsp;&nbsp;&nbsp;这个值是在哪里输入到OpticStudio的呢?系统孔径以及其它系统特定设置都由<strong>系统选项 (System Explorer)</strong> 设置。通常，系统资源管理器已经打开，但如果不是，您可以通过打开设置 (Setup) &gt; 系统选项 (System Explorer)访问它:</p>
-<img data-align="center" alt="" title="" src="file:///C:/Users/lenovo/Desktop/光学设计/md文件/system%20explorer.png">
+<img data-align="center" alt="" title="" src="img/system explorer.png">
 
 <p>&nbsp;&nbsp;&nbsp;&nbsp;打开系统选项，我们就可以为当前的设计输入合适的系统孔径类型和值。在系统选项的<strong>系统孔径 (Aperture)</strong> 选项卡下，选择<strong>入瞳直径 (Entrance Pupil Diameter)</strong> 作为<strong>孔径类型 (Aperture Type)</strong>，输入<strong>孔径值 (Aperture Value):25.0</strong>:</p>
-<img data-align="center" alt="" src="file:///C:/Users/lenovo/Desktop/光学设计/md文件/aperture.png" title="">
+<img data-align="center" alt="" src="img/aperture.png" title="">
 
 <p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>孔径值 (The Aperture Value)</strong> 是用镜头单位定义的，在OpticStudio的大多数电子表格编辑器中，镜头单位定义了尺寸的度量单位。这些尺寸包括诸如曲率半径、厚度、入瞳直径和OpticStudio中的大多数其它参数。在开始设计之前定义系统单位是非常重要的。始终检查以验证系统镜头单位是否为您所期望的。
     OpticStudio的镜头单位有四种选择:毫米、厘米、英寸或米。就本设计而言，将使用毫米。在<strong>系统选项 (System Explorer) &gt;单位 (Units)</strong> ，选择<strong>镜头单位 (Lens Units):毫米</strong>。</p>
-<img data-align="center" alt="" src="file:///C:/Users/lenovo/Desktop/光学设计/md文件/lens units.png" title="">
+<img data-align="center" alt="" src="img/lens units.png" title="">
 
 <p>&nbsp;&nbsp;&nbsp;&nbsp;目前，其它系统设置可以保留为默认选项。</p>
 <h3 class="atx" id="在opticstudio中定义视场">在OpticStudio中定义视场</h3>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;OpticStudio中的视场在系统选项中的<strong>视场数据 (Field Data)</strong> 对话框中定义。要访问视场数据对话框，请在系统选项中选择<strong>视场 (Fields)</strong> ，打开<strong>视场数据编辑器 (Open Field Data Editor)</strong>:</p>
-<img data-align="center" alt="" src="file:///C:/Users/lenovo/Desktop/光学设计/md文件/Open Field Data Editor.PNG" title="">
+<img data-align="center" alt="" src="img/Open Field Data Editor.PNG" title="">
 </article>
 </body>
 </html>
