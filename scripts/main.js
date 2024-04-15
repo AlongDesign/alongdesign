@@ -1,6 +1,3 @@
-document.querySelector("html").addEventListener("click", function () {
-  alert("别戳我，我怕疼。");
-});
 function geoFindMe() {
   const status = document.querySelector("#status");
   const mapLink = document.querySelector("#map-link");
