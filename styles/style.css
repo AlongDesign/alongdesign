@@ -30,3 +30,11 @@ li a:hover:not(.active) {
     background-color: #555;
     color: white;
 }
+
+
+
+.footer {
+  background-color: #f1f1f1;
+  padding: 1em;
+  text-align: center;
+}
