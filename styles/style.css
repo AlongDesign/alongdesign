@@ -11,6 +11,7 @@ ul {
     position: fixed;
     height: 100%;
     overflow: auto;
+    text-align: center;
 }
 
 li a {
