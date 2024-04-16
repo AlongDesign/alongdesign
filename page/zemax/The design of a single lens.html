@@ -2332,14 +2332,14 @@ body {
   <article class="markdown-body"><h1 class="atx" id="单透镜的设计">单透镜的设计</h1>
 <h2 class="atx" id="设计透镜的基本过程">设计透镜的基本过程</h2>
 <ol>
-<li><p>包括构建系统(第1部分)</p>
+<li><p><a href="#no1">包括构建系统(第1部分)</a></p>
 </li>
-<li><p>分析其性能(第2部分)</p>
+<li><p><a href="#no2">分析其性能(第2部分)</a></p>
 </li>
-<li><p>以及根据所需的指标参数和设计约束对其进行优化(第3部分)</p>
+<li><p><a href="#no3">以及根据所需的指标参数和设计约束对其进行优化(第3部分)</a></p>
 </li>
 </ol>
-<h2 class="atx" id="第一部分-构建系统">第一部分 构建系统</h2>
+<h2 class="atx" id="lessa-namedouble-quoteno1double-quotegreater第一部分-构建系统lessagreater"><a name="no1">第一部分 构建系统</a></h2>
 <h3 class="atx" id="镜头分类参数和设计约束">镜头分类参数和设计约束</h3>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;设计和优化一个玻璃材料为N-BK7， F数为4的单透镜。最终设计方案应满足以下规格和约束条件:</p>
 <table>
@@ -2413,7 +2413,7 @@ body {
 <td align="center">镜头单位定义的表面孔径的半尺寸</td>
 </tr>
 </tbody></table>
-<p><img data-align="center" alt="" title="" src="img/LED.PNG">&nbsp;&nbsp;</p>
+<p><img data-align="center" alt="" title="" src="file:///C:/Users/lenovo/Desktop/光学设计/md文件/LED.PNG">&nbsp;&nbsp;</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;镜头数据编辑器中的每一行表示一个表面。在OpticStudio序列模式中，每个光学系统从物面 (OBJ) 开始，到像面 (IMA) 结束。除了物面和像面外，剩余表面中的一个表面必须定义为<strong>光阑</strong> (STOP) 。</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;通过在高亮单元格中键入所需的值，可以将数据输入到镜头数据编辑器中。光标键或鼠标可以将高亮栏移动到所需的任何一栏。</p>
 <h3 class="atx" id="定义系统设置">定义系统设置</h3>
@@ -2421,19 +2421,105 @@ body {
 <p>&nbsp;&nbsp;&nbsp;&nbsp;入瞳直径可能是最常用的系统孔径类型，也是当前示例中最方便的定义。在OpticStudio中，入瞳直径被定义为从物空间看到的光瞳直径，以镜头单位为单位。</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;我们可以很容易地确定单透镜所需的入瞳直径。如前所述，单透镜的F/#必须等于4，有效焦距为100mm。由于F/#为无限共轭的近轴有效焦距与近轴入瞳直径之比，因此入瞳直径为25mm:</p>
 <span class="katex-display"><span class="katex"><span class="katex-mathml"></span><span aria-hidden="true" class="katex-html"><span class="base"><span style="height:1.9741em;vertical-align:-0.686em;" class="strut"></span><span class="mord"><span class="mord"><span class="mord"><span class="mord mathtt">F/#</span><span style="margin-right:0.2778em;" class="mspace"></span><span class="mrel">=</span><span style="margin-right:0.2778em;" class="mspace"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span style="height:1.2881em;" class="vlist"><span style="top:-2.314em;"><span style="height:3em;" class="pstrut"></span><span class="mord"><span class="mord mathtt">EPD</span></span></span><span style="top:-3.23em;"><span style="height:3em;" class="pstrut"></span><span style="border-bottom-width:0.04em;" class="frac-line"></span></span><span style="top:-3.677em;"><span style="height:3em;" class="pstrut"></span><span class="mord"><span class="mord mathtt">efl</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span style="height:0.686em;" class="vlist"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></span></span></span><p>&nbsp;&nbsp;&nbsp;&nbsp;这个值是在哪里输入到OpticStudio的呢?系统孔径以及其它系统特定设置都由<strong>系统选项 (System Explorer)</strong> 设置。通常，系统资源管理器已经打开，但如果不是，您可以通过打开设置 (Setup) &gt; 系统选项 (System Explorer)访问它:</p>
-<img data-align="center" alt="" title="" src="img/system explorer.png">
+<img data-align="center" alt="" title="" src="file:///C:/Users/lenovo/Desktop/光学设计/md文件/system%20explorer.png">
 
 <p>&nbsp;&nbsp;&nbsp;&nbsp;打开系统选项，我们就可以为当前的设计输入合适的系统孔径类型和值。在系统选项的<strong>系统孔径 (Aperture)</strong> 选项卡下，选择<strong>入瞳直径 (Entrance Pupil Diameter)</strong> 作为<strong>孔径类型 (Aperture Type)</strong>，输入<strong>孔径值 (Aperture Value):25.0</strong>:</p>
-<img data-align="center" alt="" src="img/aperture.png" title="">
+<img data-align="center" alt="" src="file:///C:/Users/lenovo/Desktop/光学设计/md文件/aperture.png" title="">
 
 <p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>孔径值 (The Aperture Value)</strong> 是用镜头单位定义的，在OpticStudio的大多数电子表格编辑器中，镜头单位定义了尺寸的度量单位。这些尺寸包括诸如曲率半径、厚度、入瞳直径和OpticStudio中的大多数其它参数。在开始设计之前定义系统单位是非常重要的。始终检查以验证系统镜头单位是否为您所期望的。
     OpticStudio的镜头单位有四种选择:毫米、厘米、英寸或米。就本设计而言，将使用毫米。在<strong>系统选项 (System Explorer) &gt;单位 (Units)</strong> ，选择<strong>镜头单位 (Lens Units):毫米</strong>。</p>
-<img data-align="center" alt="" src="img/lens units.png" title="">
+<img data-align="center" alt="" src="file:///C:/Users/lenovo/Desktop/光学设计/md文件/lens units.png" title="">
 
 <p>&nbsp;&nbsp;&nbsp;&nbsp;目前，其它系统设置可以保留为默认选项。</p>
 <h3 class="atx" id="在opticstudio中定义视场">在OpticStudio中定义视场</h3>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;OpticStudio中的视场在系统选项中的<strong>视场数据 (Field Data)</strong> 对话框中定义。要访问视场数据对话框，请在系统选项中选择<strong>视场 (Fields)</strong> ，打开<strong>视场数据编辑器 (Open Field Data Editor)</strong>:</p>
-<img data-align="center" alt="" src="img/Open Field Data Editor.PNG" title="">
+<img data-align="center" alt="" src="file:///C:/Users/lenovo/Desktop/光学设计/md文件/Open Field Data Editor.PNG" title="">
+
+<p>&nbsp;    OpticStudio支持五种不同的模型来定义视场：</p>
+<table>
+<thead>
+<tr>
+<th align="left">视场类型</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">角度(&nbsp;Angle )（以度为单位）</td>
+<td align="left">主光线相对于物方空间Z轴的角度。根据定义，主光线穿过入瞳中心，因此测量了入瞳中心的视场角。正的视场角是指该方向光线为正斜率，因此指向远处的物体坐标为负。<br> 这个选项在无限共轭时最有用。</td>
+</tr>
+<tr>
+<td align="left">物高(&nbsp;Object Height )</td>
+<td align="left">X和Y高度直接作用于物面 (OBJ) 的位置。高度单位为镜头单位。<br>此选项不能在无限共轭情况下使用。</td>
+</tr>
+<tr>
+<td align="left">近轴像高(&nbsp;Paraxial Image Height )</td>
+<td align="left">像面上的近轴像高位置。这个选项对于固定框架尺寸的设计非常有用，例如照相机系统中的胶卷。<br>这个选项只适用于可用近轴光学很好描述的系统。</td>
+</tr>
+<tr>
+<td align="left">实际像高(&nbsp;Real Image Height）</td>
+<td align="left">像面上的实际像高。这个选项对于固定框架尺寸的设计也很有用。但是，由于OpticStudio必须使用迭代方法来确定像平面上主光线的真实光线坐标，因此使用此选项的光线追迹稍微慢一些。</td>
+</tr>
+<tr>
+<td align="left">经纬角(&nbsp;Theodolite Angle )</td>
+<td align="left">极坐标角表示的水平角&nbsp;θ&nbsp;和 竖直角&nbsp;φ ，以度为单位。这些角度通常用于测量和天文学。</td>
+</tr>
+</tbody></table>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;为了实现单透镜设计的目的，我们将用角度定义视场。与使用单个视场表示<strong>水平视场角 (HFOV)</strong> 不同，三个视场将在5°范围内定义:(0,0)、(0,3.5)和(0,5)。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;OpticStudio标准版的视场数据编辑器最多可以输入12个视场（专业版和旗舰版允许输入更多视场）。每个视场中都可以设置一个权重，这在优化中非常有用。但是，出于本设计的目的，所有视场权重都保留为1。在视场数据对话框的前三项中输入三个视场，如下所示。要插入其它视场，可以使用键盘上的键，或者&lt;<strong>右键单击</strong>&gt;并选择<strong>插入视场 (Insert Field)</strong> 。</p>
+<img data-align="center" alt="" title="" src="file:///C:/Users/lenovo/Desktop/光学设计/md文件/Insert%20Field.PNG">
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;您还应该看到这些数据填充在<strong>系统选项 (System Explorer)</strong> 的<strong>视场 (Fields)</strong> 部分。您现在可以选择是否关闭<strong>视场数据编辑器 (Field Data Editor)</strong> 。</p>
+<h3 class="atx" id="设置波长">设置波长</h3>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;将波长数据输入到OpticStudio中的操作与输入视场数据类似，只是波长数据输入到波长数据 (Wavelength Data) 对话框内。您可以通过选择系统选项 (SystemExplorer) 访问波长 (Wavelength) ，再双击设置 (Settings) 。</p>
+<img data-align="center" alt="" title="" src="file:///C:/Users/lenovo/Desktop/光学设计/md文件/Wavelength%20Data.PNG">
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;此单透镜设计是纯单色的（使用单一波长）。从最初的设计参数来看，使用的波长为0.6328 mm（HeNe激光器的波长）。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;将这个波长输入波长数据 (Wavelength Data) 对话框，也可以在波长数据对话框底部的下拉菜单中选择一个预先编辑好的的波长选项来输入。默认情况下，F、d、C（可见光）是第一个选项。首先，从下拉菜单中选择HeNe(.6328) ，然后按下“选为当前 (Select Preset) ” 选择当前设计波长。OpticStudio将自动将这个波长放入第一项。</p>
+<p><img alt="" src="file:///C:/Users/lenovo/Desktop/%E5%85%89%E5%AD%A6%E8%AE%BE%E8%AE%A1/md%E6%96%87%E4%BB%B6/Select%20Wavelength.png"></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;请注意，OpticStudio中的波长总是以微米为单位输入的，而不考虑系统的镜头单位！也支持对单个波长进行加权，但是在这个设计中，我们将保持所有的权重统一。按下窗口右上角的“X”键关闭波长数据对话框。</p>
+<h3 class="atx" id="插入表面">插入表面</h3>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;一旦确定了系统设置，就可以将每个表面的特定信息输入镜头数据编辑器 (Lens Data Editor) 。重申一下，镜头数据编辑器中的每一行表示一个表面。因此，由玻璃分隔的两个表面组成一个单独的元件。因此，对于单透镜，总共需要4个表面:</p>
+<ol>
+<li><p>物面 (OBJ) :光线发出的位置。</p>
+</li>
+<li><p>透镜的前表面:光线进入透镜的地方。对于这个设计，这里也是光阑 (STO) 。</p>
+</li>
+<li><p>透镜的后表面:光线从后表面射入空气。</p>
+</li>
+<li><p>像面 (IMA) :光线追迹停止的位置（始终是最后一个表面）。</p>
+</li>
+</ol>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;    默认情况下，镜头数据编辑器中只包含三个表面。可以通过按键盘上的&nbsp;，或通过在表面上&lt;右键单击&gt;并选择插入表面 (Insert surface) ，将表面添加到镜头数据编辑器中。使用此方法，将在高亮光标当前所在的行之前添加一个表面。要在当前表面之后添加另一个表面，按下键盘上的或右键单击当前表面，然后选择插入后续面(Insert after) 。</p>
+<p>&nbsp;&nbsp;&nbsp;    &nbsp;由于光阑位于单透镜的前表面，所以在表面1之后插入另一个表面（表示透镜的后表面）。</p>
+<img data-align="center" alt="" title="" src="file:///C:/Users/lenovo/Desktop/光学设计/md文件/inside%20surface.PNG">
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;镜头数据编辑器中的标注 (Comment) 列对于跟踪每个表面表示的内容非常有用。要为一个表面输入注释，请高亮该单元格，并键入所需的文本。完成后，点击 或使用箭头键将光标移动到另一个单元格。在设计进程中编写注释是一个很好的习惯。对于单透镜，通过在镜头数据编辑器中的每个适当单元格中键入以下文本来标识每个表面。</p>
+<img data-align="center" alt="" title="" src="file:///C:/Users/lenovo/Desktop/光学设计/md文件/Comment%20surface.PNG">
+
+<h3 class="atx" id="输入镜头数据">输入镜头数据</h3>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;单透镜由N-BK7玻璃制成。在OpticStudio中，材料用于区分透镜前后表面。想通过输入材料类型来区分两个表面，只需在透镜数据编辑器中的适当单元格中键入材料名称（本例中为N-BK7）。</p>
+<img data-align="center" alt="" title="" src="file:///C:/Users/lenovo/Desktop/光学设计/md文件/insert%20materials.PNG">
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;OpticStudio自动将这种材料类型识别为内置玻璃库 (Glass Catalog) 中编译的众多玻璃之一。玻璃库包含了世界各地制造商提供的数百种玻璃的所有必要信息。 OpticStudio将自动在其数据库中查找这种玻璃，以确定每种设计波长下材料的折射率。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;一旦将玻璃类型输入到透镜数据编辑器中，单片透镜的透镜厚度就可以输入到表面1 (Surface 1) 的厚度栏中。由于厚度是沿光轴到下一个表面的距离，这就称为透镜元件的中心厚度。作为起始点，可以使用4 mm的厚度，因为它是孔径为25 mm透镜的合理中心厚度。在表面1的厚度列中键入值：4 。注意，这个参数稍后将被设置为优化变量。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;同样，第一个表面的曲率半径和透镜后表面与像面之间的厚度不需要预先确定，因为它们将被设置为优化变量。目前，我们将保持表面1的曲率半径为无穷大，并将表面2的厚度更改为100mm。将值100输入到表面2的厚度列中。</p>
+<img data-align="center" alt="" title="" src="file:///C:/Users/lenovo/Desktop/光学设计/md文件/inside%20thickness.PNG">
+
+<h3 class="atx" id="求解">求解</h3>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;当光学设计存在约束时，保持这些约束的方法有两种:</p>
+<ol>
+<li>将影响这些约束的参数设置为变量，并将边界约束添加到<strong>评价函数编辑器 (Merit Function Editor)</strong> 中（稍后将介绍）；</li>
+<li>使用内置的求解功能来执行约束，消除不必要的变量。</li>
+</ol>
+<p>&nbsp;&nbsp;&nbsp;    &nbsp;后一种选择要好得多。虽然这两种方法都可以调整透镜参数以保持特定的约束，但边界约束会减慢评价函数的执行速度。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;    OpticStudio中有许多不同的求解类型，每个求解类型都有特定的用途。然而，该设计的性能指标只要求使用其中一个求解类型：设置系统F/#以保持所需的焦距。要打开求解对话框，可以单击所需单元格右侧的较小单元格。基于所选择的参数，可以使用不同的求解类型。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    为了保证系统F/#，可以在表面2的曲率半径上放置F数求解 (F Number&nbsp;solve) 。F数求解调节最后一个光学表面的曲率以保证系统焦距。单击表面2的曲率半径单元格右侧的框，打开曲率求解 (Curvature solve dialog) 对话框。选择求解类型 (Solve Type) :F数 (F Number) 并输入F/#: 4。</p>
+<img data-align="center" alt="" title="" src="file:///C:/Users/lenovo/Desktop/光学设计/md文件/Curvature%20solve%20dialog.png">
+
+<p>&nbsp;    输入求解设置后，要关闭求解对话框，请按键盘上的Enter键。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;一旦设置了F数求解，OpticStudio将自动调整半径，以保持所需的F/#。换句话说，只要改变透镜参数，系统就会自动重新计算一个解。曲率半径旁边的字母“F”表示F数求解设置已完成。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;现在，单透镜已经建立完成，我们将在 如何设计单透镜 ，第二部分：分析 &nbsp;中解释如何可视化和评估系统性能。</p>
+<h2 class="atx" id="lessa-namedouble-quoteno2double-quotegreater第二部分-分析lessagreater"><a name="no2">第二部分 分析</a></h2>
 </article>
 </body>
 </html>
