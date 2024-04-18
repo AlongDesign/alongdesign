@@ -9,35 +9,173 @@
   </head>
   <body>
 
-<ul>
-  <li><a class="active" href="#home">主页</a></li>
-  <li><a href="#film">摄影</a></li>
-  <li><a href="#CAD">计算机辅助设计</a></li>
-  <li><a href="#UAV">无人机</a></li>
-  <li><a href="#data">资料</a></li>
-  <li><a href="#other">其他</a></li>
-</ul>
-
-
-  <div style="margin-left:20%;padding:1px 16px;height:1000px;">
-  <h1>ALONGDESGIN</h1>
-  <h2>页面中的所有内容均来自互联网和自己的收集整理后所展示</h2>
-  <p><a href="../page/zemax/The design of a single lens.html">zemax单透镜的设计文件</a></p>
-  <p>占位1</p>
-  <p>占位2</p>
-  <p>CAD设计文件</p>
-  <p>arcgis在线模型</p>
-  <p>拍摄位置-第三方软件导航</p>
-  <p>潘通色彩查询</p>
-	  <button id="find-me">显示我的位置</button><br />
+ <header>
+        <div class="container">
+            <h1>AlongDesign</h1>
+        </div>
+	</header>
+	
+	<nav class="navbar">
+		<ul class="topnav">
+			<li><a class="active" href="#home">主页</a>	</li>	
+			<div class="dropdown">
+				<a href="#film" class="dropbtn" >摄影</a>
+					<div class="dropdown-content">
+						<a href="#qc" >器材</a>
+						<a href="#sy">教程</a>
+					</div>
+			</div>
+			<div class="dropdown">
+				<a href="#computer" class="dropbtn">计算机辅助设计</a>
+					<div class="dropdown-content">
+						<a href="#cad" >CAD</a>
+						<a href="#cae">CAE</a>
+					</div>
+			</div>
+			<div class="dropdown">
+				<a href="#UAV" class="dropbtn">光学设计</a></li>
+					<div class="dropdown-content">
+						<a href="#zemax">zemax</a>
+						<a href="#jt">镜头</a>
+					</div>
+			</div>
+			<div class="dropdown">
+				<a href="#GiS" class="dropbtn">地理信息</a></li>
+					<div class="dropdown-content">
+						<a href="#zemax">ArcGis</a>
+						<a href="#hp">航拍</a>
+					</div>
+			</div>
+			
+			<div class="dropdown">
+				<a href="#data" class="dropbtn">资料</a></li>
+					<div class="dropdown-content">
+						<a href="#dd">无类</a>
+						<a href="#sj">书记</a>
+					</div>
+				</div>	
+			<div class="dropdown">
+					<a href="#math" class="dropbtn">数学</a>
+			</div>
+			<div class="dropdown">
+				<a href="#dq" class="dropbtn">电气</a>
+			</div>	
+			<div class="dropdown">
+				<a href="#other" class="dropbtn">其他</a>
+					<div class="dropdown-content">
+						<a href="#about">关于</a>
+						<a href="#comemet">留言</a>
+					</div>
+			</div>			
+		</ul>
+	</nav>
+	
+		
+    
+    <section>
+        <div class="container">
+            <p>这个页面会根据设备的屏幕宽度自动调整布局。</p>
+			
+        </div>
+		<div class="container">
+				<p><a href="../page/zemax/The design of a single lens.html">zemax单透镜的设计文件</a></p>
+				<p>占位符</p>
+				<p>占位符</p>
+				<p>CAD设计文件</p>
+				<p>arcgis在线模型</p>
+				<p>拍摄位置-第三方软件导航</p>
+				<p>潘通色彩查询</p>
+					<button id="find-me">显示我的位置</button><br />
 		<p id="status"></p>
 		<a id="map-link" target="_blank"></a>  
-</div>
-  
-<div class="footer">
-  <p>底部区域1</p>
-</div>
-  
+		
+		</div>
+		 <div 
+        <!-- 这里将会显示嵌入的页面 -->
+		 <iframe src="https://alongdesign.github.io/" frameborder="0" ></iframe>
+    </div>
+		
+		<p>点击各个选项切换内容:</p>
+
+			<div class="tab"  >
+				<button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">摄影器材</button>
+				<button class="tablinks" onclick="openCity(event, 'Paris')">镜头</button>
+				<button class="tablinks" onclick="openCity(event, 'Tokyo')">支架</button>
+			</div>
+
+			<div id="London" class="tabcontent">
+					<h3>索尼</h3>
+						<p>索尼全画幅微单相机a7r3maG镜头FE 200-600mm F5.6-6.3 G OSS采用索尼先进的镜头设计技术，实现优异的影像画质和快速、
+					精准和安静的对焦性能*1，以及专业的操控。搭配索尼全画幅微单A9、A7RM3和A7M3等产品使用时能够可靠地跟踪和捕捉移动物体，
+					例如飞翔的鸟类，奔跑的野生动物或者冲刺的运动员。配备DDSSM（直驱超声波马达）对焦系统，提供驱动对焦镜组所需的功率和精度，
+					可实现快速精准的对焦*1。
+先进的对焦系统可以实现安静的操作，避免产生可能干扰主体活动的不必要噪音，如休息的鸟类或者野生动物
+。内变焦设计，变焦时镜头前端与拍摄对象之间的距离保持不变。
+内变焦设计防尘防潮性能*2更好，可应对苛刻的户外拍摄条件。
+更轻更短的变焦环转矩实现快速变焦操作。多功能远摄变焦镜头，覆盖200-600mm范围，兼容SEL14TC和SEL20TC增距镜，
+最大可获得840mm（F9）或者1200mm（F13）的焦距，并且仍具备出色的影像质量和快速精准的对焦。G镜头FE 200-600mm F5.6-6.3 G OSS采用索尼先进的镜头设计技术，实现优异的影像画质和快速、
+					精准和安静的对焦性能*1，以及专业的操控。搭配索尼全画幅微单A9、A7RM3和A7M3等产品使用时能够可靠地跟踪和捕捉移动物体，
+					例如飞翔的鸟类，奔跑的野生动物或者冲刺的运动员。配备DDSSM（直驱超声波马达）对焦系统，提供驱动对焦镜组所需的功率和精度，
+					可实现快速精准的对焦*1。
+先进的对焦系统可以实现安静的操作，避免产生可能干扰主体活动的不必要噪音，如休息的鸟类或者野生动物
+。内变焦设计，变焦时镜头前端与拍摄对象之间的距离保持不变。
+内变焦设计防尘防潮性能*2更好，可应对苛刻的户外拍摄条件。
+更轻更短的变焦环转矩实现快速变焦操作。多功能远摄变焦镜头，覆盖200-600mm范围，兼容SEL14TC和SEL20TC增距镜，
+最大可获得840mm（F9）或者1200mm（F13）的焦距，并且仍具备出色的影像质量和快速精准的对焦。</p>
+			</div>
+
+				<div id="Paris" class="tabcontent">
+					<h3>大疆</h3>
+					<p>4旋翼无刷电机无线电遥控航空飞行器G镜头FE 200-600mm F5.6-6.3 G OSS采用索尼先进的镜头设计技术，实现优异的影像画质和快速、
+					精准和安静的对焦性能*1，以及专业的操控。搭配索尼全画幅微单A9、A7RM3和A7M3等产品使用时能够可靠地跟踪和捕捉移动物体，
+					例如飞翔的鸟类，奔跑的野生动物或者冲刺的运动员。配备DDSSM（直驱超声波马达）对焦系统，提供驱动对焦镜组所需的功率和精度，
+					可实现快速精准的对焦*1。
+先进的对焦系统可以实现安静的操作，避免产生可能干扰主体活动的不必要噪音，如休息的鸟类或者野生动物
+。内变焦设计，变焦时镜头前端与拍摄对象之间的距离保持不变。
+内变焦设计防尘防潮性能*2更好，可应对苛刻的户外拍摄条件。
+更轻更短的变焦环转矩实现快速变焦操作。多功能远摄变焦镜头，覆盖200-600mm范围，兼容SEL14TC和SEL20TC增距镜，
+最大可获得840mm（F9）或者1200mm（F13）的焦距，并且仍具备出色的影像质量和快速精准的对焦。G镜头FE 200-600mm F5.6-6.3 G OSS采用索尼先进的镜头设计技术，实现优异的影像画质和快速、
+					精准和安静的对焦性能*1，以及专业的操控。搭配索尼全画幅微单A9、A7RM3和A7M3等产品使用时能够可靠地跟踪和捕捉移动物体，
+					例如飞翔的鸟类，奔跑的野生动物或者冲刺的运动员。配备DDSSM（直驱超声波马达）对焦系统，提供驱动对焦镜组所需的功率和精度，
+					可实现快速精准的对焦*1。
+先进的对焦系统可以实现安静的操作，避免产生可能干扰主体活动的不必要噪音，如休息的鸟类或者野生动物
+。内变焦设计，变焦时镜头前端与拍摄对象之间的距离保持不变。
+内变焦设计防尘防潮性能*2更好，可应对苛刻的户外拍摄条件。
+更轻更短的变焦环转矩实现快速变焦操作。多功能远摄变焦镜头，覆盖200-600mm范围，兼容SEL14TC和SEL20TC增距镜，
+最大可获得840mm（F9）或者1200mm（F13）的焦距，并且仍具备出色的影像质量和快速精准的对焦。</p>
+				</div>
+
+				<div id="Tokyo" class="tabcontent">
+					<h3>镜头</h3>
+					<p>来自索尼长焦变焦镜头200-600mm，适马ART 40mm 1.4 大光圈定焦镜头</p>
+					<p>G镜头FE 200-600mm F5.6-6.3 G OSS采用索尼先进的镜头设计技术，实现优异的影像画质和快速、
+					精准和安静的对焦性能*1，以及专业的操控。搭配索尼全画幅微单A9、A7RM3和A7M3等产品使用时能够可靠地跟踪和捕捉移动物体，
+					例如飞翔的鸟类，奔跑的野生动物或者冲刺的运动员。配备DDSSM（直驱超声波马达）对焦系统，提供驱动对焦镜组所需的功率和精度，
+					可实现快速精准的对焦*1。
+先进的对焦系统可以实现安静的操作，避免产生可能干扰主体活动的不必要噪音，如休息的鸟类或者野生动物
+。内变焦设计，变焦时镜头前端与拍摄对象之间的距离保持不变。
+内变焦设计防尘防潮性能*2更好，可应对苛刻的户外拍摄条件。
+更轻更短的变焦环转矩实现快速变焦操作。多功能远摄变焦镜头，覆盖200-600mm范围，兼容SEL14TC和SEL20TC增距镜，
+最大可获得840mm（F9）或者1200mm（F13）的焦距，并且仍具备出色的影像质量和快速精准的对焦。G镜头FE 200-600mm F5.6-6.3 G OSS采用索尼先进的镜头设计技术，实现优异的影像画质和快速、
+					精准和安静的对焦性能*1，以及专业的操控。搭配索尼全画幅微单A9、A7RM3和A7M3等产品使用时能够可靠地跟踪和捕捉移动物体，
+					例如飞翔的鸟类，奔跑的野生动物或者冲刺的运动员。配备DDSSM（直驱超声波马达）对焦系统，提供驱动对焦镜组所需的功率和精度，
+					可实现快速精准的对焦*1。
+先进的对焦系统可以实现安静的操作，避免产生可能干扰主体活动的不必要噪音，如休息的鸟类或者野生动物
+。内变焦设计，变焦时镜头前端与拍摄对象之间的距离保持不变。
+内变焦设计防尘防潮性能*2更好，可应对苛刻的户外拍摄条件。
+更轻更短的变焦环转矩实现快速变焦操作。多功能远摄变焦镜头，覆盖200-600mm范围，兼容SEL14TC和SEL20TC增距镜，
+最大可获得840mm（F9）或者1200mm（F13）的焦距，并且仍具备出色的影像质量和快速精准的对焦。</p>
+				</div>
+			
+    </section>
+    
+	<div>
+	<footer>
+        <div class="container">
+            <p>底部空间 &copy; 2024</p>
+        </div>
+    </footer>
+	</div>
   
   <script src="scripts/main.js" defer></script>
   </body>
