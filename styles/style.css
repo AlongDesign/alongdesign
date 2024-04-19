@@ -28,14 +28,32 @@
                 max-width: 360px;
             }
         }
-		/* 响应式布局 -屏幕尺寸小于 400px 时，导航等布局改为上下布局 */
-		@media screen and (max-width: 400px) {
-			.navbar a {
-				float: none;
-				width: 100%;
-  }
-}
-		
+		/* 响应式布局 -屏幕尺寸小于 400px 时，导航等布局改为上下布局 未写完*/
+		@media (max-width: 768px) {
+			.navbar {
+				flex-flow:row wrap;
+				justify-content:space-between;
+				/* float: none;
+				width: 100%; */
+				}
+				 .nav-button {
+                width: 20%;
+                display: block;
+            }
+			  .navbar-brand {
+                width: 80%;
+            }
+			.navbar-nav {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+            }
+ 
+            .nav-item {
+                margin: 10px 0 0 0;
+            }				
+		}
 		
 
 /* 导航栏 */
