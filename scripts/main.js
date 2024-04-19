@@ -68,3 +68,15 @@ function geoFindMe() {
 }
 
 document.querySelector("#find-me").addEventListener("click", geoFindMe);
+
+
+/* 响应式布局 -屏幕尺寸小于 400px 时，导航等布局改为上下布局 未写完*/
+ const show = () =>{
+        let navs = document.getElementById("navs");
+        if(navs.style.display === "none"){
+            navs.style.display = "flex";
+        }else{
+            navs.style.display = "none";
+        }
+    }
+
