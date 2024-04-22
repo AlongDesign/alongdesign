@@ -205,7 +205,12 @@ li a:hover, .dropdown:hover, .dropbtn {
       opacity: 0;
     }
 
-
+iframe {
+    border: none;
+    width: 100%;
+    height: 400px;
+    display: block;
+  }
 
 
 
