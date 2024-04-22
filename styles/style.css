@@ -179,6 +179,32 @@ li a:hover, .dropdown:hover, .dropbtn {
 
 
 
+/* 回到顶部 */
+    .backTop {
+      /* 固定定位 */
+      position: fixed;
+      bottom: 250px;
+      right: 0;
+      margin-right: 20px;
+      z-index: 999;
+      /* 回到顶部样式 */
+      width: 60px;
+      height: 35px;
+      background-color: deepskyblue;
+      /* 字体在元素中水平垂直居中 */
+      line-height: 35px;
+      text-align: center;
+      font-size: 14px;
+      color: white;
+      /* 设置圆角 */
+      border-radius: 10px;
+      /* 设置过渡效果 */
+      transition: all linear 0.5s;
+      cursor: pointer;
+      /* 隐藏 透明度为0 */
+      opacity: 0;
+    }
+
 
 
 
