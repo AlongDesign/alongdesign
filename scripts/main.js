@@ -1,7 +1,7 @@
-// 触发 id="defaultOpen" click 事件
+/*  触发 id="defaultOpen" click 事件 */ 
 document.getElementById("defaultOpen").click();
 
-// 当网页向下滑动 20px 出现"返回顶部" 按钮
+/* 当网页向下滑动 20px 出现"返回顶部" 按钮 */
 window.onscroll = function() {scrollFunction()};
  
 function scrollFunction() {console.log(121);
@@ -12,13 +12,13 @@ function scrollFunction() {console.log(121);
     }
 }
  
-// 点击按钮，返回顶部
+/* 点击按钮，返回顶部 */
 function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
 
-选项卡
+/*  选项卡 */
  function openCity(evt, cityName) {
         var i, tabcontent, tablinks;
         tabcontent = document.getElementsByClassName("tabcontent");
